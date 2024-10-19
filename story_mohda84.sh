@@ -6,20 +6,32 @@ sudo apt install -y python3 python3-pip
 
 # Function to install Story automatically
 install_story() {
-  weget  https://raw.githubusercontent.com/mohda84/story-node/407b75c2a3dbd27c89d23295bcea92477f7766e1/install
+    # Download the install script from GitHub using wget
+    wget -O story_installer.sh https://raw.githubusercontent.com/mohda84/story-node/407b75c2a3dbd27c89d23295bcea92477f7766e1/install
+    
+    # Make the script executable
+    chmod +x story_installer.sh
+    
+    # Run the script
     python3 story_installer.sh
 }
 
 # Function to check Story node synchronization status
 check_story_status() {
-   weget https://raw.githubusercontent.com/mohda84/story-node/588ad8b2c8379f553e11e656faed52463aabce72/status
-    python3 story_status
+    # Download the status script using wget
+    wget -O story_status.py https://raw.githubusercontent.com/mohda84/story-node/588ad8b2c8379f553e11e656faed52463aabce72/status
+    
+    # Run the script
+    python3 story_status.py
 }
 
 # Function to update Story to the latest version
 update_story() {
-   weget https://raw.githubusercontent.com/mohda84/story-node/1680cad701c6ef1b2987f22ede83a7d360756f61/update
-    python3 story_update
+    # Download the update script using wget
+    wget -O story_update.py https://raw.githubusercontent.com/mohda84/story-node/1680cad701c6ef1b2987f22ede83a7d360756f61/update
+    
+    # Run the script
+    python3 story_update.py
 }
 
 # Display menu and prompt user for input
