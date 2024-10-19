@@ -7,7 +7,7 @@ sudo apt install -y python3 python3-pip
 # Function to install Story automatically
 install_story() {
     # Download the install script from GitHub using wget
-    wget  https://raw.githubusercontent.com/mohda84/story-node/407b75c2a3dbd27c89d23295bcea92477f7766e1/install
+    wget  https://raw.githubusercontent.com/mohda84/story-node/refs/heads/main/story_installer.sh
     
     # Make the script executable
     chmod +x story_installer.sh
