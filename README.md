@@ -1,1 +1,1 @@
-Go to the automatic installation and enjoy
+https://raw.githubusercontent.com/mohda84/story-node/refs/heads/main/auto-install
